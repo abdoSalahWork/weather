@@ -1,0 +1,134 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light-sm py-5" id="navbar">
+        <div class="container-fluid d-flex px-5">
+            <div class="logo">
+                <a class="logo-img justify-content-start d-flex text-decoration-none" href="#">
+                    <img src="image/logo@2x.png" alt="">
+                    <div class="caption-logo">
+                        <h6 class="title text-white">Weather</h6>
+                        <small class="desc">tagline goes here</small>
+                    </div>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars text-white"></i>
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
+                    <li><a class="nav-link scrollto mr-3 px-3 py-1" href="#">Home</a></li>
+                    <li><a class="nav-link scrollto mr-3 px-3 py-1" href="#">News</a></li>
+                    <li><a class="nav-link scrollto mr-3 px-3 py-1" href="#">Live cameras</a></li>
+                    <li><a class="nav-link scrollto mr-3 px-3 py-1" href="#">Photos</a></li>
+                    <li><a class="nav-link scrollto px-3 py-1" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <header class="d-flex justify-content-center p-5">
+        <input id="searchInput" class="position-relative text-white " type="search" placeholder="Find your location...">
+        <input id="searchBtn" type="button" class="butn p-2" value="Find" style="right:50px;">
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="temperatures row">
+                 <!-- The Day -->
+                <div class="col-md-4 today">
+                    <div class="ground-ingo"></div>
+                    <div class="info-day d-flex justify-content-between ">
+                        <p  id="nameDay"></p>
+                        <p id="dateDay"></p>
+                    </div>
+
+                    <div id="todayWeather">
+
+                    </div>
+                </div>
+
+                <!-- The Tomorrow -->
+                <div class="col-md-4 tomorrow">
+                    <div class="ground-ingo"></div>
+
+                    <div class="info-day text-center ">
+                        <p  id="nameTomor"></p>
+                    </div>
+
+                     
+                    <div id="tomorWeather">
+
+                    </div>
+
+                </div>
+
+                <!-- The After Tomorrow -->
+                <div class="col-md-4 after-tomor">
+                    <div class="ground-ingo"></div>
+                    <div class="info-day text-center">
+                        <p  id="nameAfterTo"></p>
+                    </div>
+
+                    <div id="afterTomorWeather"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="pb-5">
+        <div class="container pb-5">
+            <div class="row py-2" style="margin-top: 30px;">
+                <div class="col-md-8  my-2">
+                    <input class="position-relative text-white" type="search" placeholder="Find your location...">
+                    <input type="button" class="butn p-2" value="Subscribe" style="right:15px; top: 0;">
+                </div>
+
+                <div class="col-md-3 col-md-offset-1">
+                    <div class="social-media d-flex justify-content-start">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-google-plus-g"></i>
+                        </a>
+
+                        <a href="#">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="JS/jquery-3.5.1.slim.min.js"></script>
+    <script src="JS/bootstrap.bundle.js"></script>
+    <script src="JS/main.js"></script>
+
+</body>
+
+</html>
